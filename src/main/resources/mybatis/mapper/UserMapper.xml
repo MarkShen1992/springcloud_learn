@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.github.markshen.springcloudlearn.dao.UserDAO">
+    <sql id="common">
+        username, passwd, real_name AS realName, phone, email,
+        create_time AS createTime, create_user AS createUser,
+        update_time AS updateTime, update_user AS updateUser, is_deleted AS deleted
+    </sql>
+
+    <select id="getUserById" parameterType="Long" resultType="com.github.markshen.springcloudlearn.entity.UserEntity">
+        SELECT
+            <include refid="common"></include>
+        FROM
+            t_user
+        WHERE
+            id = #{id}
+    </select>
+</mapper>
