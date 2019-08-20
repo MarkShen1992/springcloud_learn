@@ -3,3 +3,11 @@
 
 `helloworld`: http://localhost:8080/hello
 
+
+
+# 命令行指定使用哪个profile
+
+```
+java -jar xxx.jar --spring.profiles.active=prod
+```
+
