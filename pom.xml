@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.github.markshen</groupId>
-	<artifactId>springcloud_learn</artifactId>
+	<artifactId>springcloud-learn</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>springcloud_learn</name>
+	<name>springcloud-learn</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -72,7 +72,7 @@
 			<artifactId>shiro-core</artifactId>
 			<version>1.4.0</version>
 		</dependency>
-	</dependencies>
+    </dependencies>
 
 	<!-- 打成可运行jar文件插件 -->
 	<build>
